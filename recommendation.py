@@ -1,5 +1,4 @@
 # Recommendation Function
-# ----------------------------------
 
 def recommend_movies(movie_name, top_n=5):
 
@@ -33,4 +32,17 @@ def recommend_movies(movie_name, top_n=5):
                     row['title']
                 )
 
-    return list(set(recommended_movies))[:top_n]
+    return list(set(recommended_movies))[:top_n]))
+
+movie_name = input(
+    "Enter Movie Name: "
+)
+
+recommendations = recommend_movies(
+    movie_name
+)
+
+print("\nRecommended Movies:\n")
+
+for movie in recommendations:
+    print(movie)
