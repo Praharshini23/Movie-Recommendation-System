@@ -8,7 +8,7 @@ rules = rules.sort_values(
     by='lift',
     ascending=False
 )
-
+ 
 rules['antecedents'] = rules['antecedents'].apply(list)
 rules['consequents'] = rules['consequents'].apply(list)
 
